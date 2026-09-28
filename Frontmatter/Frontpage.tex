@@ -1,0 +1,34 @@
+\begin{titlepage}
+
+\begin{center}
+%\includegraphics[width=60mm,keepaspectratio]{images/BMElogo.png}\\
+%\vspace{0.3cm}
+%\textbf{Budapesti Műszaki és Gazdaságtudományi Egyetem}\\
+%\textmd{Villamosmérnöki és Informatikai Kar}\\
+%\textmd{Elektronikus Eszközök Tanszéke}\\[5cm]
+
+\vspace*{4cm} % Increase this value to move the title block down
+{\Large \documentauthor}\\
+\vspace{0.6cm}
+{\Huge \bfseries \documenttitle}\\
+\vspace{0.6cm}
+{\Large \documentsubtitle}\\
+
+\vfill
+%Témavezető\\
+%\vspace{0.3cm}
+%{\Large Dr. Ender Ferenc}\\
+%\vspace{0.3cm}
+{\Large Lyngby, \today} % can be changed to \thedate
+\end{center}
+
+% DTU logo
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north west, 
+      xshift=8.9mm, 
+      yshift=-8.3mm] 
+     at (current page.north west) 
+     {\includegraphics[width=20mm,keepaspectratio]{Pictures/Logos/dtured_rgb.pdf}}; 
+\end{tikzpicture}
+
+\end{titlepage}
