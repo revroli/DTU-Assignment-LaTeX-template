@@ -1,2 +1,3 @@
 # Latex temp files
 latex_compile/*
+!latex_compile/Roland_Reviczki-Assignment.pdf
