@@ -89,22 +89,11 @@ purple,         fill=purple         \\%
 
 % Setup header and footer
 \fancypagestyle{main}{% All normal pages
-    \fancyhead{}
-    \fancyfoot{}
+    \fancyhf{}
     \renewcommand{\headrulewidth}{0pt}
-    \fancyfoot[LE,RO]{\footnotesize \thepage}
-    \fancyfoot[RE,LO]{\footnotesize \documenttitle} % - \rightmark
-    \fancyhfoffset[E,O]{0pt}
+    \fancyfoot[L]{\footnotesize \documenttitle} % Document title on the left
+    \fancyfoot[R]{\footnotesize \thepage}       % Page number on the right (or omit if unwanted)
 }
-\fancypagestyle{plain}{% Chapter pages
-    \fancyhead{}
-    \fancyfoot{}
-    \renewcommand{\headrulewidth}{0pt}
-    \fancyfoot[LE,RO]{\footnotesize \thepage}
-    \fancyfoot[RE,LO]{\footnotesize \documenttitle} % - \leftmark
-    \fancyhfoffset[E,O]{0pt}
-}
-
 
 % Setup for diagrams and graphs (tikz pictures) 
 \usetikzlibrary{spy}    % For magnifying anything within a tikzpicture, see the line graph
